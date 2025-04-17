@@ -1,8 +1,10 @@
 package com.rms.extranet.model;
 
+import java.util.List;
+
 public class LoginResponse {
     private String memberCode;
-    private String responseCode;
+    private List<String> responseCode;
     private String loginId;
     private String token;
     private String status;
@@ -16,11 +18,11 @@ public class LoginResponse {
         this.memberCode = memberCode;
     }
 
-    public String getResponseCode() {
+    public List<String> getResponseCode() {
         return responseCode;
     }
 
-    public void setResponseCode(String responseCode) {
+    public void setResponseCode(List<String> responseCode) {
         this.responseCode = responseCode;
     }
 
@@ -48,4 +50,3 @@ public class LoginResponse {
         this.status = status;
     }
 }
-

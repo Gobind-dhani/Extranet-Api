@@ -16,11 +16,11 @@ public class LoginService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String LOGIN_URL = "https://www.connect2nse.com/extranet-api/login/1.0";
-    private final String LOGOUT_URL = "https://www.connect2nse.com/extranet-api/logout/1.0";
+    private final String LOGIN_URL = "https://www.connect2nse.com/extranet-api/login/2.0";
+    private final String LOGOUT_URL = "https://www.connect2nse.com/extranet-api/logout/2.0";
 
     // Your secret key provided during registration
-    private final String encryptionKey = "XBaNb0xmK2TNRIfcHA3F306Oi14HWAeYmtUd0qRheTc=";
+    private final String encryptionKey = "D2QQIxVMNFz5CaajIugLwo+W+q8ABBxa+/KJpvXmXpQ=";
 
     public LoginResponse login(LoginRequest loginRequest) throws Exception {
         // Encrypt the password
